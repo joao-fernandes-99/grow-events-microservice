@@ -14,8 +14,4 @@ export class GrowService {
     const newCreateGrowEvent = new this.growEventsModel(createGrowEvent);
     return newCreateGrowEvent.save();
   }
-
-  async findAll(): Promise<Grow[]> {
-    return this.growEventsModel.find().exec();
-  }
 }
